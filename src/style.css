@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+.routerTitle{
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    color: rgb(15, 72, 129);
+    background:rgb(212, 234, 255);
+}
+.routerTitle span{
+    padding-left: 20px;
+}

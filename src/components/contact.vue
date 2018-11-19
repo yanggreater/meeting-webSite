@@ -1,0 +1,39 @@
+<template>
+    <div class="contact">
+        <div class="routerTitle"><span>Contact</span></div>
+        <div class="content">
+            <template v-for="message in messages">
+                <div class="name"><span>{{message.name}}</span></div>
+                <div><span>TEL: {{message.tel}}</span></div>
+                <div><span>Email: {{message.Email}}</span></div>
+            </template>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    data() {
+        return{
+            messages:[
+                {name:'杨景校',tel:'15207157721',Email:'915759631@qq.com'},
+                {name:'杨景校',tel:'15207157721',Email:'915759631@qq.com'},
+                {name:'杨景校',tel:'15207157721',Email:'915759631@qq.com'},
+                {name:'杨景校',tel:'15207157721',Email:'915759631@qq.com'},
+            ]
+        }
+    }
+}
+</script>
+
+<style scoped>
+    .content div{
+        padding-left: 20px;
+        margin-top: 8px;
+    }
+    .content .name{
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 300;
+    }
+</style>
