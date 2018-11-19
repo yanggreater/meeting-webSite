@@ -1,4 +1,5 @@
 import axios from 'axios';
+import qs from 'qs';
 const Util = {
     //apiPath:'http://api.52feidian.com/api',
     //读取cookie
@@ -6,7 +7,12 @@ const Util = {
 Util.ajax = axios.create({
     //baseURL: Util.apiPath,
     //xhrFields:{'Access-Control-Allow-Origin':'*'},
-    headers:{'Content-Type':'application/x-www-form-urlencoded'}
+    headers:{'Content-Type':'application/x-www-form-urlencoded'},
+    // transformRequest: [function (data) {
+    //     // 对 data 进行任意转换处理
+    //     qs.stringify(data);
+    //     return data;
+    // }],
 });
 Util.getLastDate = function(time) {
     var date = new Date(time);

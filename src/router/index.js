@@ -30,6 +30,10 @@ export default new Router({
       component :(resolve) => require(['../components/speakers.vue'],resolve)
     },
     {
+      path:'/register',
+      component: (resolve) => require(['../components/register.vue'],resolve)
+    },
+    {
       path:'/accommodation',
       component:(resolve) => require(['../components/accommodation.vue'],resolve)
     },
