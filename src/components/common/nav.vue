@@ -13,7 +13,7 @@
             <el-menu-item index="3"><router-link to="/speakers">Speakers</router-link></el-menu-item>
             <el-menu-item index="4"><router-link to="/register">Registrations</router-link></el-menu-item>
             <el-menu-item index="5"><router-link to="/index">Program</router-link></el-menu-item>
-            <el-menu-item index="6"><router-link to="/index">Travel</router-link></el-menu-item>
+            <el-menu-item index="6"><router-link to="/travel">Travel</router-link></el-menu-item>
             <el-menu-item index="7"><router-link to="/accommodation">Accommodation</router-link></el-menu-item>
             <el-menu-item index="8"><router-link to="/abstract">Abstract Award</router-link></el-menu-item>
             <el-menu-item index="9"><router-link to="/contact">Contact</router-link></el-menu-item>

@@ -84,7 +84,7 @@ export default {
 .main .leftMess{
   float: left;
   /* background: green; */
-  height: 500px;
+  height: 800px;
   width: 67%;
 }
 .main .rightMess{

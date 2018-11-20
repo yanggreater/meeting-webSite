@@ -30,6 +30,10 @@ export default new Router({
       component :(resolve) => require(['../components/speakers.vue'],resolve)
     },
     {
+      path:'/travel',
+      component: (resolve) => require(['../components/travel.vue'],resolve)
+    },
+    {
       path:'/register',
       component: (resolve) => require(['../components/register.vue'],resolve)
     },
@@ -44,6 +48,14 @@ export default new Router({
     {
       path:'/contact',
       component: (resolve) => require(['../components/contact.vue'],resolve)
+    },
+    {
+      path:'/one',
+      component:(resolve) => require(['../components/announcements/one.vue'],resolve)
+    },
+    {
+      path:'/two',
+      component: (resolve) => require(['../components/announcements/two.vue'],resolve)
     }
     // {
     //   path: '/',
