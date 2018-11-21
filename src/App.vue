@@ -74,8 +74,11 @@ export default {
      background-color: #d3dce6;
   } */
 .container{
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
+}
+.container .nav{
+  width: 100%;
 }
 .main{
   margin-top: 18px;

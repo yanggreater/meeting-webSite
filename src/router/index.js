@@ -56,6 +56,14 @@ export default new Router({
     {
       path:'/two',
       component: (resolve) => require(['../components/announcements/two.vue'],resolve)
+    },
+    {
+      path:'/personal/:account',
+      component: (resolve) => require(['../components/personal.vue'],resolve)
+    },
+    {
+      path:'/download',
+      component:(resolve) => require(['../components/download.vue'],resolve)
     }
     // {
     //   path: '/',

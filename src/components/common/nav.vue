@@ -17,7 +17,7 @@
             <el-menu-item index="7"><router-link to="/accommodation">Accommodation</router-link></el-menu-item>
             <el-menu-item index="8"><router-link to="/abstract">Abstract Award</router-link></el-menu-item>
             <el-menu-item index="9"><router-link to="/contact">Contact</router-link></el-menu-item>
-            <el-menu-item index="10"><router-link to="/index">Download</router-link></el-menu-item>
+            <el-menu-item index="10"><router-link to="/download">Download</router-link></el-menu-item>
 
         </el-menu>
         <!-- <ul>
@@ -48,6 +48,9 @@ export default {
 </script>
 
 <style scoped>
+    .nav{
+        width: 100%;
+    }
     /* .nav ul li{
         float: left;
         list-style:none;

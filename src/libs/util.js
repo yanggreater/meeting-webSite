@@ -1,11 +1,11 @@
 import axios from 'axios';
 import qs from 'qs';
 const Util = {
-    //apiPath:'http://api.52feidian.com/api',
+    apiPath:'http://139.199.230.213:3000',
     //读取cookie
     }
 Util.ajax = axios.create({
-    //baseURL: Util.apiPath,
+    baseURL: Util.apiPath,
     //xhrFields:{'Access-Control-Allow-Origin':'*'},
     headers:{'Content-Type':'application/x-www-form-urlencoded'},
     // transformRequest: [function (data) {
