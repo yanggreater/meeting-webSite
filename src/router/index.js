@@ -64,6 +64,10 @@ export default new Router({
     {
       path:'/download',
       component:(resolve) => require(['../components/download.vue'],resolve)
+    },
+    {
+      path:'/allpersons',
+      component:(resolve) => require(['../components/allPersons.vue'],resolve)
     }
     // {
     //   path: '/',

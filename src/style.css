@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    background: rgba(166, 209, 255, 0.185)
+}
 a{
     text-decoration: none;
 }

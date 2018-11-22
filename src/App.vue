@@ -76,6 +76,7 @@ export default {
 .container{
   width: 90%;
   margin: 0 auto;
+  background: #fff;
 }
 .container .nav{
   width: 100%;
@@ -89,10 +90,12 @@ export default {
   /* background: green; */
   height: 800px;
   width: 67%;
+  background: rgb(255, 255, 255);
 }
 .main .rightMess{
   width: 30%;
   float: right;
+  background: rgb(255, 255, 255);
   /* background: gray; */
   /* height: 500px; */
 }
