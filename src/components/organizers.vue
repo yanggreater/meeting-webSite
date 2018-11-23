@@ -3,8 +3,8 @@
         <div class="routerTitle"><span>Organizers</span></div>
         <div class="content">
             <template v-for="(message,index) in messages">
-                <div class="name" :key="index"><span>{{message.name}}</span></div>
-                <div class="introduce" :key="index"><span>{{message.introduce}}</span></div>
+                <div class="name" :key="index+1"><span>{{message.name}}</span></div>
+                <div class="introduce" :key="-index-1"><span>{{message.introduce}}</span></div>
             </template>
         </div>
     </div>

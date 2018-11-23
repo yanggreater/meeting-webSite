@@ -163,7 +163,7 @@ export default {
                             }
                         })
                         .catch(error => {
-                            this.$message.error(error);
+                            console.log(error);
                     })
                     
                 } else {

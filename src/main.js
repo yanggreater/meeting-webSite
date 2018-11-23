@@ -4,12 +4,23 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import qs from 'qs'
-import ElementUI from 'element-ui';
+import {Button,Dialog,Carousel,CarouselItem, Message,Table,TableColumn,Form,FormItem,Menu,MenuItem,Input} from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import './style.css'
 Vue.prototype.$qs = qs;
 Vue.config.productionTip = false;
-Vue.use(ElementUI);
+Vue.prototype.$message = Message;
+Vue.use(Button);
+Vue.use(Dialog);
+Vue.use(Carousel);
+Vue.use(CarouselItem);
+Vue.use(Table);
+Vue.use(TableColumn);
+Vue.use(Form);
+Vue.use(FormItem);
+Vue.use(Menu);
+Vue.use(MenuItem);
+Vue.use(Input);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
