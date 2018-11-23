@@ -6,7 +6,7 @@ const Util = {
     }
 Util.ajax = axios.create({
     baseURL: Util.apiPath,
-    //xhrFields:{'Access-Control-Allow-Origin':'*'},
+    xhrFields:{'Access-Control-Allow-Origin':'*'},
     headers:{'Content-Type':'application/x-www-form-urlencoded'},
     // transformRequest: [function (data) {
     //     // 对 data 进行任意转换处理

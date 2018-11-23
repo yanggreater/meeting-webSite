@@ -37,6 +37,7 @@ export default {
 <style scoped>
     .person-item{  
 		height: 120px;
+		width: 95%;
 		color: #b1adaa;
 		padding: 15px;
 		transition: box-shadow 1s ease;
@@ -47,9 +48,9 @@ export default {
 		 box-shadow: 2px 2px 30px 5px #888888;
 	}
 	.person-item .left-image{
+		width: 16%;
 		float: left;
 		overflow: hidden;
-		width: 90px;
 		height: 110px;
 	}
 	.person-item .left-image #img{
@@ -58,10 +59,9 @@ export default {
 	.person-item .right{
 		float: left;
 		font-size: 15px;
-		width: 540px;
         height: 150px;
-        margin-left: 20px;
-        margin-top: 10px;
+    	margin-left: 20px;
+    
 		overflow: hidden;
     }
     .right p{

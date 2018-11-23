@@ -1,6 +1,6 @@
 <template>
-    <div class="download">
-        <div class="routerTitle"><span>Download</span></div>
+    <div class="progress">
+        <div class="routerTitle"><span>会议流程</span></div>
         <div class="content">
             <div class="file" v-for="(file,index) in files" :key="index">
                 <a :href="file.url">{{file.name}}</a>
@@ -12,10 +12,9 @@
 <script>
 import $ from '../libs/util.js'
 export default {
-    name:'download',
     data(){
         return{
-            file:[]
+             file:[]
         }
     },
     computed:{
@@ -24,7 +23,7 @@ export default {
             for(let item =0;item<this.file.length;item++){
                 let json = {};
                 json.name = this.file[item];
-                json.url = 'http://139.199.230.213/TestDB/public/files/'+this.file[item];
+                json.url = 'http://139.199.230.213/TestDB/public/program/'+this.file[item];
                 items.push(json);
             }
             return items;
@@ -32,7 +31,7 @@ export default {
     },
     created(){
         //获取后台信息
-        $.ajax.get('/files/').then(res => {
+        $.ajax.get('/program/').then(res => {
             //console.log(res);
             if(res.status === 200){
                 this.file = res.data;
@@ -43,11 +42,6 @@ export default {
             console.log(error);
         })
     },
-    // mounted(){
-    //     console.log(this.files);
-        
-    // }
-    
 }
 </script>
 

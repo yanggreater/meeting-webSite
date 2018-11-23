@@ -38,6 +38,10 @@ export default new Router({
       component: (resolve) => require(['../components/register.vue'],resolve)
     },
     {
+      path:'/program',
+      component: (resolve) => require(['../components/program.vue'],resolve)
+    },
+    {
       path:'/accommodation',
       component:(resolve) => require(['../components/accommodation.vue'],resolve)
     },

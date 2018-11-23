@@ -17,6 +17,8 @@ export default {
         return{
             persons:[
                 {name:'杨景校',college:'HZAU',introduce:'信息学院计算机专业-沸点工作室web组'},
+                {name:'杨景校',college:'HZAU',introduce:'信息学院计算机专业-沸点工作室web组'},
+                {name:'杨景校',college:'HZAU',introduce:'信息学院计算机专业-沸点工作室web组'},
                 // {name:'杨景校',college:'HZAU',introduce:'信息学院计算机专业-沸点工作室web组'},
                 
             ]
@@ -26,17 +28,19 @@ export default {
         Person
     },
     created(){
-        $.ajax.get('/speakers').then((res) => {
-            this.persons = res.data;
-            //console.log(res);
-        })
-        .catch((error) => {
-            console.log(error);
-        })
+        // $.ajax.get('/speakers').then((res) => {
+        //     this.persons = res.data;
+        //     //console.log(res);
+        // })
+        // .catch((error) => {
+        //     console.log(error);
+        // })
     }
 }
 </script>
 
-<style>
-
+<style scoped>
+    .speakers{
+        width: 100%;
+    }
 </style>

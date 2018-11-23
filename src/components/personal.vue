@@ -4,6 +4,7 @@
         <div class="content">
             <a class="change" @click="change">修改资料>></a>
             <div class="info">账 户:{{account}}</div>
+            <div class="info">姓 名:{{personal[0].name}}</div>
             <div class="info">邮 箱:{{personal[0].Email}}</div>
             <div class="info">电 话:{{personal[0].phone}}</div>
             <div class="info">学 院:{{personal[0].college}}</div>
@@ -18,6 +19,9 @@
                 </el-form-item>
                 <el-form-item label="密码" size="mini" >
                     <el-input v-model="personal[0].password"></el-input>
+                </el-form-item>
+                <el-form-item label="姓名" size="mini" >
+                    <el-input v-model="personal[0].name"></el-input>
                 </el-form-item>
                 <el-form-item label="邮箱" size="mini">
                     <el-input v-model="personal[0].Email"></el-input>
