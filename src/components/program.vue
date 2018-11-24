@@ -1,6 +1,6 @@
 <template>
     <div class="progress">
-        <div class="routerTitle"><span>会议流程</span></div>
+        <div class="routerTitle"><span>program</span></div>
         <div class="content">
             <div class="file" v-for="(file,index) in files" :key="index">
                 <a :href="file.url">{{file.name}}</a>
@@ -51,7 +51,7 @@ export default {
     }
     .file{
         padding: 15px 0;
-        border-bottom: 1px solid #EBEEF5;
+        border-bottom: 1px solid rgb(217, 221, 230);
     }
     .file a{
         padding-left: 10px;

@@ -4,7 +4,6 @@
             :default-active="activeIndex" 
             class="el-menu-demo" 
             mode="horizontal" 
-            @select="handleSelect"
             background-color="#545c64"
             text-color="#fff"
             active-text-color="#ffd04b">
@@ -20,20 +19,7 @@
             <el-menu-item index="10"><router-link to="/download">Download</router-link></el-menu-item>
 
         </el-menu>
-        <!-- <ul>
-            <li><router-link to="/index">Home</router-link></li>
-            <li><router-link to="/org">Home</router-link></li>
-            <li><router-link to="/speakers">Home</router-link></li>
-            <li><router-link to="/index">Home</router-link></li>
-            <li><router-link to="/index">Home</router-link></li>
-            <li><router-link to="/index">Home</router-link></li>
-            <li><router-link to="/index">Home</router-link></li>
-            <li><router-link to="/index">Home</router-link></li>
-            <li><router-link to="/index">Home</router-link></li>
-            <li><router-link to="/index">Home</router-link></li>
-            <li><router-link to="/index">Home</router-link></li>
-            <li><router-link to="/index">Home</router-link></li>
-        </ul> -->
+        
     </div>
 </template>
 
@@ -43,6 +29,11 @@ export default {
         return{
             activeIndex:'1'
         }
+    },
+    methods:{
+        
+            
+        
     }
 }
 </script>
@@ -51,16 +42,10 @@ export default {
     .nav{
         width: 100%;
     }
-    /* .nav ul li{
-        float: left;
-        list-style:none;
+    .el-menu-demo li{
+        padding: 0;
     }
-    .nav ul li a{
-        padding: 20px 25px 20px 25px;
-        background: #545c64;
-        color: #fff;    
-        display: inline-block;
-        text-decoration: none;
-        border: 
-    } */
+    .el-menu-demo li a{
+        padding: 20px 20px
+    }
 </style>

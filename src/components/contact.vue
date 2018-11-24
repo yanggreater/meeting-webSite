@@ -27,9 +27,11 @@ export default {
 </script>
 
 <style scoped>
+    .content {
+        margin: 15px 0 0 35px;
+    }
     .content div{
-        padding-left: 20px;
-        margin-top: 8px;
+        margin-bottom: 10px;
     }
     .content .name{
         margin-top: 20px;

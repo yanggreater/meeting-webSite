@@ -40,7 +40,7 @@ export default {
       images:[
         'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542641383740&di=e485880cd0d4aee72929058e0de8b36f&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0192bd554859490000005b03cac220.jpg',
         'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542641383739&di=1a3a5c0e398723c94a4d0a1d5eced44c&imgtype=0&src=http%3A%2F%2Fimg.redocn.com%2Fsheji%2F20150311%2Fhuiyihuodonghaibaosucai_3991687.jpg',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542641383735&di=f8387e8a6a7b7aa1e8fef19ba7b4a269&imgtype=0&src=http%3A%2F%2Fpic.qiantucdn.com%2F58pic%2F19%2F59%2F48%2F84v58PICB8r_1024.jpg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543038238708&di=5467b3a3799b9452f0634aca2e33dc27&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01ed05569da68e6ac72537007045c1.jpg',
       ]
     }
     
@@ -88,12 +88,16 @@ export default {
 .main .leftMess{
   float: left;
   /* background: green; */
-  height: 800px;
+  /* height: 500px; */
+  padding-bottom: 100px;
+  margin-bottom: 50px;
   width: 67%;
   background: rgb(255, 255, 255);
 }
 .main .rightMess{
   width: 30%;
+  margin-bottom: 50px;
+  padding-bottom: 40px;
   float: right;
   background: rgb(255, 255, 255);
   /* background: gray; */

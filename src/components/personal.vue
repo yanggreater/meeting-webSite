@@ -3,40 +3,40 @@
         <h2 class="routerTitle"><span>个人资料</span></h2>
         <div class="content">
             <a class="change" @click="change">修改资料>></a>
-            <div class="info">账 户:{{account}}</div>
-            <div class="info">姓 名:{{personal[0].name}}</div>
-            <div class="info">邮 箱:{{personal[0].Email}}</div>
-            <div class="info">电 话:{{personal[0].phone}}</div>
-            <div class="info">学 院:{{personal[0].college}}</div>
+            <div class="info"><span>account:</span>{{account}}</div>
+            <div class="info"><span>name:</span>{{personal[0].name}}</div>
+            <div class="info"><span>Email:</span>{{personal[0].Email}}</div>
+            <div class="info"><span>telephone:</span>{{personal[0].phone}}</div>
+            <div class="info"><span>college:</span>{{personal[0].college}}</div>
         </div>
         <el-dialog
             title="修改资料"
             :visible.sync="dialogVisible"
             width="25%">
-            <el-form label-width="40px" :model="personal[0]" size="mini">
-                <el-form-item label="账号" size="mini" >
+            <el-form label-width="75px" :model="personal[0]" size="mini">
+                <el-form-item label="account" size="mini" >
                     <el-input v-model="personal[0].account" disabled></el-input>
                 </el-form-item>
-                <el-form-item label="密码" size="mini" >
+                <el-form-item label="password" size="mini" >
                     <el-input v-model="personal[0].password"></el-input>
                 </el-form-item>
-                <el-form-item label="姓名" size="mini" >
+                <el-form-item label="name" size="mini" >
                     <el-input v-model="personal[0].name"></el-input>
                 </el-form-item>
-                <el-form-item label="邮箱" size="mini">
+                <el-form-item label="Email" size="mini">
                     <el-input v-model="personal[0].Email"></el-input>
                 </el-form-item>
-                <el-form-item label="电话" size="mini" >
+                <el-form-item label="telephone" size="mini" >
                     <el-input v-model="personal[0].phone"></el-input>
                 </el-form-item>
-                <el-form-item label="学院" size="mini">
+                <el-form-item label="college" size="mini">
                     <el-input v-model="personal[0].college"></el-input>
                 </el-form-item>
 
             </el-form>
             <span slot="footer" class="dialog-footer">
                 <el-button @click="dialogVisible = false" size="small">取 消</el-button>
-                <el-button type="primary" @click="handleChange" size="small">确 定</el-button>
+                <el-button type="primary" @click="handleChange" size="small">提 交</el-button>
             </span>
         </el-dialog>
     </div>
@@ -103,5 +103,10 @@ export default {
     }
     .content .info{
         margin-bottom: 10px;
+    }
+    .info span{
+        display: inline-block;
+        width: 80px;
+        text-align: left;
     }
 </style>

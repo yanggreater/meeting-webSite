@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 import qs from 'qs'
 import {Button,Dialog,Carousel,CarouselItem, Message,Table,TableColumn,Form,FormItem,Menu,MenuItem,Input} from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
+//import 'element-ui/lib/theme-chalk/index.css';
 import './style.css'
 Vue.prototype.$qs = qs;
 Vue.config.productionTip = false;

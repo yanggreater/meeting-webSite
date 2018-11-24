@@ -1,19 +1,19 @@
 <template>
     <div class="register">
-        <div class="routerTitle"><span>注册登录</span></div>
+        <div class="routerTitle"><span>Registration</span></div>
         <div class="content">
-            <p>请与会人员注册并登录查看自己的信息</p>
-            <el-button type="primary" @click="register" size="small">注 册</el-button>
-            <el-button type="primary" @click="login" size="small">登 录</el-button>
+            <p>Participants are requested to register and log in to view their own information.</p>
+            <el-button type="primary" @click="register" size="small">register</el-button>
+            <el-button type="primary" @click="login" size="small">login</el-button>
             <el-dialog
-                title="登录"
+                title="login"
                 :visible.sync="dialogVisible1"
                 width="25%">
-                <el-form label-width="40px" :model="formLabelAlign" size="mini">
-                    <el-form-item label="账号" size="mini">
+                <el-form label-width="70px" :model="formLabelAlign" size="mini">
+                    <el-form-item label="account" size="mini">
                         <el-input v-model="formLabelAlign.account"></el-input>
                     </el-form-item>
-                    <el-form-item label="密码">
+                    <el-form-item label="password">
                         <el-input v-model="formLabelAlign.password" type="password"></el-input>
                     </el-form-item>
                 </el-form>
@@ -23,29 +23,29 @@
                 </span>
             </el-dialog>
             <el-dialog
-                title="注册"
+                title="register"
                 :visible.sync="dialogVisible2"
                 width="28%">
-                <el-form label-width="80px" :model="formRegister" size="mini" status-icon :rules="rules2" ref="ruleForm2" class="demo-ruleForm">
-                    <el-form-item label="账 号" size="mini" prop="account"> 
+                <el-form label-width="95px" :model="formRegister" size="mini" status-icon :rules="rules2" ref="ruleForm2" class="demo-ruleForm">
+                    <el-form-item label="account" size="mini" prop="account"> 
                         <el-input v-model="formRegister.account" autocomplete="off"></el-input>
                     </el-form-item>
-                    <el-form-item label="密 码" size="mini" prop="password">
+                    <el-form-item label="password" size="mini" prop="password">
                         <el-input type="password" v-model="formRegister.password" autocomplete="off"></el-input>
                     </el-form-item>
-                    <el-form-item label="确认密码" size="mini" prop="checkPass">
+                    <el-form-item label="confirmPass" size="mini" prop="checkPass">
                         <el-input type="password" v-model="formRegister.checkPass" autocomplete="off"></el-input>
                     </el-form-item>
-                    <el-form-item label="姓名" size="mini" prop="name">
+                    <el-form-item label="name" size="mini" prop="name">
                         <el-input v-model="formRegister.name" autocomplete="off"></el-input>
                     </el-form-item>
-                    <el-form-item label="邮 箱" size="mini" prop="Email">
+                    <el-form-item label="Email" size="mini" prop="Email">
                         <el-input v-model="formRegister.Email" autocomplete="off"></el-input>
                     </el-form-item>
-                    <el-form-item label="电 话" size="mini" prop="phone">
+                    <el-form-item label="telephone" size="mini" prop="phone">
                         <el-input v-model="formRegister.phone" autocomplete="off"></el-input>
                     </el-form-item>
-                    <el-form-item label="学 院" size="mini" prop="college">
+                    <el-form-item label="college" size="mini" prop="college">
                         <el-input v-model="formRegister.college" autocomplete="off"></el-input>
                     </el-form-item>
 

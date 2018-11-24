@@ -1,6 +1,7 @@
 <template>
     <div class="foot">
-        <span>华中农业大学-信息学院-沸点工作室版权所有!</span>
+        <span class="left">Copyright © 2018</span>
+        <span>International High-end Forum on Crop Science</span>
     </div>
 </template>
 
@@ -14,10 +15,13 @@ export default {
     .foot{
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
         text-align: center;
-        background: rgb(88, 88, 250);
+        background: #409EFF;
         color: #fff;
-        font-size: 18px;
+        font-size: 17px;
         padding: 20px 0;
         /* margin-top: 20px; */
+    }
+    .left{
+        margin-right: 30px;
     }
 </style>

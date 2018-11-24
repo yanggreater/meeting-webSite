@@ -57,7 +57,7 @@ export default {
     }
     .file{
         padding: 15px 0;
-        border-bottom: 1px solid #EBEEF5;
+        border-bottom: 1px solid rgb(213, 217, 226);
     }
     .file a{
         padding-left: 10px;
