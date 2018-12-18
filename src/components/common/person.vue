@@ -2,7 +2,7 @@
     <div class="person-item" @mouseover='change()' @mouseout='back()'>
 
 		<div class ="left-image">
-			<img src="../../assets/logo.png" id="img" ref="img">
+			<img :src="value.image" id="img" ref="img">
 		</div>
 
 		<div class="right">
@@ -36,7 +36,7 @@ export default {
 
 <style scoped>
     .person-item{  
-		height: 120px;
+		height: 130px;
 		width: 95%;
 		color: #b1adaa;
 		padding: 15px;
@@ -51,17 +51,17 @@ export default {
 		width: 16%;
 		float: left;
 		overflow: hidden;
-		height: 110px;
+		height: 130px;
 	}
 	.person-item .left-image #img{
+		height: 100%;
 		transition: transform 0.6s
 	}   
 	.person-item .right{
 		float: left;
 		font-size: 15px;
-        height: 150px;
+        width: 80%;
     	margin-left: 20px;
-    
 		overflow: hidden;
     }
     .right p{

@@ -15,9 +15,14 @@ export default {
     data() {
         return{
             messages:[
-                {name:'yanggreater',introduce:'来自华中农业大学计算机科学技术专业'},
-                {name:'yanggreater',introduce:'来自华中农业大学计算机科学技术专业'},
-                {name:'yanggreater',introduce:'来自华中农业大学计算机科学技术专业'}
+                {name:'Jianbing Yan',introduce:'Huazhong Agricultural University'},
+                {name:'David Jackson',introduce:'Cold Spring Harbor Laboratory'},
+                {name:"郭亮",introduce:'Huazhong Agricultural University'},
+                {name:"谢卡斌",introduce:'Huazhong Agricultural University'},
+                {name:"李林",introduce:'Huazhong Agricultural University'},
+                {name:"陈伟",introduce:'Huazhong Agricultural University'},
+                {name:"金双侠",introduce:'Huazhong Agricultural University'},
+                {name:'谢为博',introduce:'Huazhong Agricultural University'}
             ]
         }
     }

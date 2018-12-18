@@ -9,7 +9,7 @@
                     <el-table-column
                         prop="name"
                         label="姓名"
-                        width="180">
+                        width="140">
                     </el-table-column>
                     <el-table-column
                         prop="Email"
@@ -23,6 +23,10 @@
                      <el-table-column
                         prop="college"
                         label="学院">
+                    </el-table-column>
+                    <el-table-column
+                        prop="Address"
+                        label="地址">
                     </el-table-column>
                 </el-table>
         </div>

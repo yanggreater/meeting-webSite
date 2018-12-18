@@ -10,16 +10,16 @@
                 :visible.sync="dialogVisible1"
                 width="25%">
                 <el-form label-width="70px" :model="formLabelAlign" size="mini">
-                    <el-form-item label="account" size="mini">
+                    <el-form-item label="Account" size="mini">
                         <el-input v-model="formLabelAlign.account"></el-input>
                     </el-form-item>
-                    <el-form-item label="password">
+                    <el-form-item label="Password">
                         <el-input v-model="formLabelAlign.password" type="password"></el-input>
                     </el-form-item>
                 </el-form>
                 <span slot="footer" class="dialog-footer">
-                    <el-button @click="dialogVisible1 = false" size="small">取 消</el-button>
-                    <el-button type="primary" @click="handleLogin" size="small">确 定</el-button>
+                    <el-button @click="dialogVisible1 = false" size="small">Canel</el-button>
+                    <el-button type="primary" @click="handleLogin" size="small">Confirm</el-button>
                 </span>
             </el-dialog>
             <el-dialog
@@ -27,32 +27,34 @@
                 :visible.sync="dialogVisible2"
                 width="28%">
                 <el-form label-width="95px" :model="formRegister" size="mini" status-icon :rules="rules2" ref="ruleForm2" class="demo-ruleForm">
-                    <el-form-item label="account" size="mini" prop="account"> 
+                    <el-form-item label="Account" size="mini" prop="account"> 
                         <el-input v-model="formRegister.account" autocomplete="off"></el-input>
                     </el-form-item>
-                    <el-form-item label="password" size="mini" prop="password">
+                    <el-form-item label="Password" size="mini" prop="password">
                         <el-input type="password" v-model="formRegister.password" autocomplete="off"></el-input>
                     </el-form-item>
-                    <el-form-item label="confirmPass" size="mini" prop="checkPass">
+                    <el-form-item label="ConfirmPass" size="mini" prop="checkPass">
                         <el-input type="password" v-model="formRegister.checkPass" autocomplete="off"></el-input>
                     </el-form-item>
-                    <el-form-item label="name" size="mini" prop="name">
+                    <el-form-item label="Name" size="mini" prop="name">
                         <el-input v-model="formRegister.name" autocomplete="off"></el-input>
                     </el-form-item>
                     <el-form-item label="Email" size="mini" prop="Email">
                         <el-input v-model="formRegister.Email" autocomplete="off"></el-input>
                     </el-form-item>
-                    <el-form-item label="telephone" size="mini" prop="phone">
+                    <el-form-item label="Telephone" size="mini" prop="phone">
                         <el-input v-model="formRegister.phone" autocomplete="off"></el-input>
                     </el-form-item>
-                    <el-form-item label="college" size="mini" prop="college">
+                    <el-form-item label="College" size="mini" prop="college">
                         <el-input v-model="formRegister.college" autocomplete="off"></el-input>
                     </el-form-item>
-
+                    <el-form-item label="Address" size="mini" prop="Address">
+                        <el-input v-model="formRegister.Address" autocomplete="off"></el-input>
+                    </el-form-item>
                 </el-form>
                 <span slot="footer" class="dialog-footer">
-                    <el-button @click="dialogVisible2 = false" size="small">取 消</el-button>
-                    <el-button type="primary" @click="handleRegister('ruleForm2')" size="small">确 定</el-button>
+                    <el-button @click="dialogVisible2 = false" size="small">Canel</el-button>
+                    <el-button type="primary" @click="handleRegister('ruleForm2')" size="small">Confirm</el-button>
                 </span>
             </el-dialog>
         </div>
@@ -88,7 +90,8 @@ export default {
                 name:'',
                 Email:'',
                 phone:'',
-                college:''
+                college:'',
+                Address:''
             },
             
             rules2: {
@@ -114,6 +117,9 @@ export default {
                 ],
                 college:[
                     {required:true,message:'请输入学院信息',trigger:['blur','change']}
+                ],
+                Address:[
+                    {required:true,message:'请输入邮寄地址',trigger:['blur','change']}
                 ]
             }
         

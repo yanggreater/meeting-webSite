@@ -30,14 +30,12 @@ export default {
     data(){
         return{
             tips:[
-                {event:'Registration Open',date:'2018-10-29'},
-                {event:'Registration Open',date:'2018-10-29'},
-                // {event:'Registration Open',date:'2018-10-29'},
-                // {event:'Registration Open',date:'2018-10-29'},
+                {event:'Meeting time',date:'2019-6-29'},
+                {event:'Meeting time',date:'2019-6-29'},
             ],
             organizers:[
-                {name:'杨景校',introduce:'华中农业大学-信息系学院-计科1602'},
-                {name:'杨景校',introduce:'华中农业大学-信息系学院-计科1602'}
+                {name:'Jianbing Yan',introduce:'Huazhong Agricultural University'},
+                {name:'David Jackson',introduce:'Cold Spring Harbor Laboratory'},
             ]
         }
     }

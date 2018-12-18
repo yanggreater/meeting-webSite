@@ -3,40 +3,44 @@
         <h2 class="routerTitle"><span>个人资料</span></h2>
         <div class="content">
             <a class="change" @click="change">修改资料>></a>
-            <div class="info"><span>account:</span>{{account}}</div>
-            <div class="info"><span>name:</span>{{personal[0].name}}</div>
+            <div class="info"><span>Account:</span>{{account}}</div>
+            <div class="info"><span>Name:</span>{{personal[0].name}}</div>
             <div class="info"><span>Email:</span>{{personal[0].Email}}</div>
-            <div class="info"><span>telephone:</span>{{personal[0].phone}}</div>
-            <div class="info"><span>college:</span>{{personal[0].college}}</div>
+            <div class="info"><span>Telephone:</span>{{personal[0].phone}}</div>
+            <div class="info"><span>College:</span>{{personal[0].college}}</div>
+            <div class="info"><span>Address:</span>{{personal[0].Address}}</div>
         </div>
         <el-dialog
-            title="修改资料"
+            title="Modifying data"
             :visible.sync="dialogVisible"
             width="25%">
             <el-form label-width="75px" :model="personal[0]" size="mini">
-                <el-form-item label="account" size="mini" >
+                <el-form-item label="Account" size="mini" >
                     <el-input v-model="personal[0].account" disabled></el-input>
                 </el-form-item>
-                <el-form-item label="password" size="mini" >
+                <el-form-item label="Password" size="mini" >
                     <el-input v-model="personal[0].password"></el-input>
                 </el-form-item>
-                <el-form-item label="name" size="mini" >
+                <el-form-item label="Name" size="mini" >
                     <el-input v-model="personal[0].name"></el-input>
                 </el-form-item>
                 <el-form-item label="Email" size="mini">
                     <el-input v-model="personal[0].Email"></el-input>
                 </el-form-item>
-                <el-form-item label="telephone" size="mini" >
+                <el-form-item label="Telephone" size="mini" >
                     <el-input v-model="personal[0].phone"></el-input>
                 </el-form-item>
-                <el-form-item label="college" size="mini">
+                <el-form-item label="College" size="mini">
                     <el-input v-model="personal[0].college"></el-input>
+                </el-form-item>
+                <el-form-item label="Address" size="mini">
+                    <el-input v-model="personal[0].Address"></el-input>
                 </el-form-item>
 
             </el-form>
             <span slot="footer" class="dialog-footer">
-                <el-button @click="dialogVisible = false" size="small">取 消</el-button>
-                <el-button type="primary" @click="handleChange" size="small">提 交</el-button>
+                <el-button @click="dialogVisible = false" size="small">Canel</el-button>
+                <el-button type="primary" @click="handleChange" size="small">Submit</el-button>
             </span>
         </el-dialog>
     </div>
