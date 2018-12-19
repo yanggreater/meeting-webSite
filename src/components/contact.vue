@@ -16,10 +16,10 @@ export default {
     data() {
         return{
             messages:[
-                {name:'杨景校',tel:'15207157721',Email:'915759631@qq.com'},
-                {name:'杨景校',tel:'15207157721',Email:'915759631@qq.com'},
-                {name:'杨景校',tel:'15207157721',Email:'915759631@qq.com'},
-                {name:'杨景校',tel:'15207157721',Email:'915759631@qq.com'},
+                {name:'李林',tel:'027-87658491',Email:'hzaulilin@mail.hzau.edu.cn'},
+                // {name:'杨景校',tel:'15207157721',Email:'915759631@qq.com'},
+                // {name:'杨景校',tel:'15207157721',Email:'915759631@qq.com'},
+                // {name:'杨景校',tel:'15207157721',Email:'915759631@qq.com'},
             ]
         }
     }

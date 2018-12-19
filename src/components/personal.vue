@@ -1,8 +1,8 @@
 <template>
     <div class="personal">
-        <h2 class="routerTitle"><span>个人资料</span></h2>
+        <h2 class="routerTitle"><span>Personal Data</span></h2>
         <div class="content">
-            <a class="change" @click="change">修改资料>></a>
+            <a class="change" @click="change">Modifying data >></a>
             <div class="info"><span>Account:</span>{{account}}</div>
             <div class="info"><span>Name:</span>{{personal[0].name}}</div>
             <div class="info"><span>Email:</span>{{personal[0].Email}}</div>
@@ -64,9 +64,9 @@ export default {
             $.ajax.post('/adjust',this.$qs.stringify(this.personal[0])).then(res => {
                 if(res.status === 200){
                     if(res.data === 1){
-                        this.$message.success('修改成功');
+                        this.$message.success('Modified success!');
                     }else{
-                        this.$message.error('修改失败!');
+                        this.$message.error('Modification failed!');
                     }
                 }
             }) 

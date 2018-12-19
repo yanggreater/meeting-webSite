@@ -23,7 +23,7 @@
                 </span>
             </el-dialog>
             <el-dialog
-                title="register"
+                title="Registration"
                 :visible.sync="dialogVisible2"
                 width="28%">
                 <el-form label-width="95px" :model="formRegister" size="mini" status-icon :rules="rules2" ref="ruleForm2" class="demo-ruleForm">
@@ -68,9 +68,9 @@ export default {
     data(){
         var validatePass2 = (rule, value, callback) => {
             if (value === '') {
-                callback(new Error('请再次输入密码'));
+                callback(new Error('Please input your password again.'));
             } else if (value !== this.formRegister.password) {
-                callback(new Error('两次输入密码不一致!'));
+                callback(new Error('Two inconsistent passwords!'));
             } else {
                 callback();
             }
@@ -96,30 +96,30 @@ export default {
             
             rules2: {
                 account: [
-                    {required:true,message:'请输入账号',trigger:['blur','change']}
+                    {required:true,message:'Please input your account number.',trigger:['blur','change']}
                     // { validator: checkAcc, trigger: 'blur' }
                 ],
                 password: [
-                    {required:true,message:'请输入密码',trigger:['blur','change']},
+                    {required:true,message:'Please input a password',trigger:['blur','change']},
                 ],
                 checkPass: [
                     { required:true,validator: validatePass2, trigger: ['blur','change'] }
                 ],
                 name:[
-                    {required:true,message:'请输入姓名',trigger:['blur','change']}
+                    {required:true,message:'Please input your name',trigger:['blur','change']}
                 ],
                 Email:[
-                    { required: true, message: '请输入邮箱地址', trigger: ['blur','change'] },
-                    { type: 'email', message: '请输入正确的邮箱地址', trigger: ['blur', 'change'] }
+                    { required: true, message: 'Please input your email', trigger: ['blur','change'] },
+                    { type: 'email', message: 'Please input the correct email', trigger: ['blur', 'change'] }
                 ],
                 phone:[
-                    {required:true,message:'请输入电话号码',trigger:['blur','change']}
+                    {required:true,message:'Please input your phone ',trigger:['blur','change']}
                 ],
                 college:[
-                    {required:true,message:'请输入学院信息',trigger:['blur','change']}
+                    {required:true,message:'Please input College Information',trigger:['blur','change']}
                 ],
                 Address:[
-                    {required:true,message:'请输入邮寄地址',trigger:['blur','change']}
+                    {required:true,message:'Please input your address',trigger:['blur','change']}
                 ]
             }
         
@@ -139,12 +139,12 @@ export default {
                     if(res.data === 1){
                         this.dialogVisible1 = false;
                         this.$message({
-                            message:'登录成功!',
+                            message:'Login successfully!',
                             type:'success'
                         });
                         this.$router.push('/personal/'+this.formLabelAlign.account);
                     }else{
-                        this.$message.warning('账户不存在或密码错误!');
+                        this.$message.warning('Account does not exist or password error!');
                     }
                 }
             })
@@ -162,9 +162,9 @@ export default {
                             if(res.status === 200){
                                 if(res.data === 1){
                                     this.dialogVisible2 = false;
-                                    this.$message.success('注册成功!');
+                                    this.$message.success('register successfully!');
                                 }else{
-                                    this.$message.error('用户存在,请重试！');
+                                    this.$message.error('User already exists, please try again!');
                                 }
                             }
                         })
@@ -174,7 +174,7 @@ export default {
                     
                 } else {
                     this.$message.warning({
-                        message:'请完善信息',
+                        message:'Please improve the information',
                         showClose:true
                     });
                     //console.log('error submit!!');

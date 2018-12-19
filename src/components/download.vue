@@ -2,9 +2,10 @@
     <div class="download">
         <div class="routerTitle"><span>Download</span></div>
         <div class="content">
-            <div class="file" v-for="(file,index) in files" :key="index">
+            <!-- <div class="file" v-for="(file,index) in files" :key="index">
                 <a :href="file.url">{{file.name}}</a>
-            </div>
+            </div> -->
+            <span>To be determined</span>
         </div>
     </div>
 </template>

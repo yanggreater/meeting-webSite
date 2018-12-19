@@ -1,6 +1,6 @@
 <template>
     <div class="one">
-        这是第一个公告页面
+        To be determined
     </div>
 </template>
 
