@@ -30,8 +30,8 @@ export default {
     data(){
         return{
             tips:[
-                {event:'Meeting time',date:'2019-6-29'},
-                {event:'Meeting time',date:'2019-6-29'},
+                {event:'Meeting time',date:'2019-06-02~2019-06-05'},
+                // {event:'Meeting time',date:'2019-6-29'},
             ],
             organizers:[
                 {name:'Jianbing Yan',introduce:'Huazhong Agricultural University'},

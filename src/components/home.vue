@@ -3,7 +3,7 @@
         <div class="welcome">
             <div class="routerTitle"><span>Welcome Message</span></div>
             <div class="content">
-                <span>Genome engineering is a truly revolutionary advance in biology, and has opened various new possibilities for other fields of science. We are pleased to announce that “Frontiers in Genome Engineering 2018”  will be held from October 22 to 25, 2018 in Beijing, China. The conference will offer an excellent environment for all participants to share ideas by providing stimulating talks from internationally renowned keynote speakers. Join us to discuss the newest genome engineering technologies and to learn the applications in areas ranging from agriculture to human health.</span>
+                <span>We are warmly welcoming you to join us in the 1st International Forum on Crop Science – Green Crops for Sustainable Agriculture. The conference will be held in Wuhan, China from June 2-5, 2019, and is organized by Huazhong Agricultural University. China has a large and vibrant crop genetics and genomics research community, and has dramatically promoted global crop science research. However, enormous challenges arise from the global increase of population and changing climate. This Symposium is dedicated to bridging together scientists from China, USA and other countries to address the global challenges in crop science in an efficient and collaborative manner.</span>
             </div>
         </div>
         <div class="speakers">
@@ -17,7 +17,7 @@
             <div class="routerTitle"><span>Announcements</span></div>
             <div class="content">
                 <div class="one">
-                    <router-link to="/one">第一条公告</router-link>
+                    <router-link to="/one">Announcement One</router-link>
                     <span>2018-11-18</span>
                 </div>
                 <!-- <div class="two">
@@ -41,22 +41,27 @@ export default {
     data(){
         return{
             persons:[
-                {image:'https://www.eeob.iastate.edu/files/styles/people_thumb/public/people/profilepictures/website_photo.jpg?itok=0q4e9CHK',name:'Matt Hufford'},
-                {image:'http://www.yanggreater.club/photo/AndreaGallavotti.png',name:'Andrea Gallavotti'},
-                {image:'https://cbs.umn.edu/sites/cbs.umn.edu/files/public/styles/faculty_portrait_290x360/public/images/contacts/nathan%20springer_1.jpg?itok=XdNV10Sc',name:'Nathan Springer'},
-                {image:'http://www.plantbio.uga.edu/sites/default/files/styles/square_400x400/public/zhang_xx260.jpg?itok=kPmA3nfb',name:'Xiaoyu Zhang'},
-                {image:'http://www.yanggreater.club/photo/Balint-Kurti.jpg',name:"Peter Balint-Kurti",college:'North Carolina State University',introduce:'He is interested in understanding the genetic and mechanistic bases of disease resistance in maize. He hopes that findings made will improve the resilience of the maize crop and will  be extrapolated to other plant systems'},
-                {image:'https://www.uni-regensburg.de/biologie-vorklinische-medizin/cell-biology-and-plant-biochemistry/medien/research-dresselhaus/team/fittosize_191_191_d6e223c01cdc0bccc5cf574d0745dd42_thomas_neu__3_.jpeg',name:"Thomas Dresselhaus"},
-                {image:'https://www.aiche.org/sites/default/files/styles/ache_portrait_no-up-scale_nocrop/public/images/bio/bill_gordon-kamm.jpg?itok=cgmBomGP',name:"Bill Gordon Kamm"},
-                {image:'http://as.nyu.edu/content/dam/nyu-as/faculty/images/purugganan-michael-photo.jpg',name:"Michael Purugganan"},
-                {image:'https://www.plantsciences.uzh.ch/contacts/plantsciences/bkeller/photo/BeatKellerBW100px.jpg',name:"Beat Keller"},
-                {image:'https://agronomy.cfans.umn.edu/sites/agronomy.cfans.umn.edu/files/cfans_asset_431277.jpg',name:"Gary J. Muehlbauer"},
-                {image:'http://www.yanggreater.club/photo/JacquelineBatley.jpg',name:'Jacqueline Batley'},
-                {image:'https://research-repository.uwa.edu.au/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png',name:'Isobel AP Parkin',college:'Agriculture and Agri-Food Canada',introduce:"Her expertise is centered on Brassica genomics, comparative genome organisation, global gene expression analysis, abiotic stress responses."},
-                {image:'http://www.yanggreater.club/photo/BingYang.png',name:'Bing Yang'},
-                {image:'http://www.psc.ac.cn/old/news/upload/20140925-Lozano-Duran_meitu_1.jpg',name:'Rosa Lozano-Duran'},
-                {image:'https://www.globalfood.cam.ac.uk/memberdirectory/paszkowski/image_normal',name:'Uta Pazkowski'},
-                {image:'https://biology.unt.edu/sites/biology.unt.edu/files/images/faculty/photos/Ayre_Brian_hero%20copy.jpg',name:'Bryan Ayre'}
+                {name:'Bryan Ayre',image:'https://biology.unt.edu/sites/biology.unt.edu/files/images/faculty/photos/Ayre_Brian_hero%20copy.jpg'},
+                {name:"Peter Balint-Kurti",image:'http://www.yanggreater.club/photo/Balint-Kurti.jpg'},
+                {name:'Jacqueline Batley',image:'http://www.yanggreater.club/photo/JacquelineBatley.jpg'},
+                {name:"Thomas Dresselhaus",image:'https://www.uni-regensburg.de/biologie-vorklinische-medizin/cell-biology-and-plant-biochemistry/medien/research-dresselhaus/team/fittosize_191_191_d6e223c01cdc0bccc5cf574d0745dd42_thomas_neu__3_.jpeg'},
+                
+                {name:'Andrea Gallavotti',image:'http://www.yanggreater.club/photo/AndreaGallavotti.png'},
+                
+                {name:"Bill Gordon Kamm",image:'https://www.aiche.org/sites/default/files/styles/ache_portrait_no-up-scale_nocrop/public/images/bio/bill_gordon-kamm.jpg?itok=cgmBomGP'},
+                {name:'David Jackson',image:'https://www.cshl.edu/wp-content/uploads/2018/10/Dave-Jackson-2L6A0087.jpg'},
+                {name:"Beat Keller",image:'https://www.plantsciences.uzh.ch/contacts/plantsciences/bkeller/photo/BeatKellerBW100px.jpg'},
+                {name:'Rosa Lozano-Duran',image:'http://www.psc.ac.cn/old/news/upload/20140925-Lozano-Duran_meitu_1.jpg',},
+                {name:"Gary J. Muehlbauer",image:'https://agronomy.cfans.umn.edu/sites/agronomy.cfans.umn.edu/files/cfans_asset_431277.jpg'},
+                {name:'Uta Pazkowski',image:'https://www.globalfood.cam.ac.uk/memberdirectory/paszkowski/image_normal'},
+                {name:"Michael Purugganan",image:'http://as.nyu.edu/content/dam/nyu-as/faculty/images/purugganan-michael-photo.jpg'},
+                
+                {name:'Isobel AP Parkin',image:'https://research-repository.uwa.edu.au/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png'},
+                {name:'Jeffrey Ross-Ibarra',image:'https://biology.ucdavis.edu/sites/g/files/dgvnsk2646/files/styles/sf_profile/public/images/person/Ross-IbarraJeffrey14290.jpg?h=0a12c941&itok=MQBHMVA4'},
+                {name:'Nathan Springer',image:'https://cbs.umn.edu/sites/cbs.umn.edu/files/public/styles/faculty_portrait_290x360/public/images/contacts/nathan%20springer_1.jpg?itok=XdNV10Sc'},
+                {name:'Bing Yang',image:'http://www.yanggreater.club/photo/BingYang.png'},
+                {name:'Jianbing Yan',image:'http://www.yanggreater.club/photo/JianbingYan.png'},
+                {name:'Xiaoyu Zhang',image:'http://www.plantbio.uga.edu/sites/default/files/styles/square_400x400/public/zhang_xx260.jpg?itok=kPmA3nfb'},
             ]
         }
     }

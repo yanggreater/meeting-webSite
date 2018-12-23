@@ -38,9 +38,13 @@ export default {
   data(){
     return{
       images:[
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542641383740&di=e485880cd0d4aee72929058e0de8b36f&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0192bd554859490000005b03cac220.jpg',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542641383739&di=1a3a5c0e398723c94a4d0a1d5eced44c&imgtype=0&src=http%3A%2F%2Fimg.redocn.com%2Fsheji%2F20150311%2Fhuiyihuodonghaibaosucai_3991687.jpg',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543038238708&di=5467b3a3799b9452f0634aca2e33dc27&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01ed05569da68e6ac72537007045c1.jpg',
+        'http://www.yanggreater.club/photo/hzau1.jpg',
+        'http://www.yanggreater.club/photo/yumi.jpg',
+        'http://www.yanggreater.club/photo/hzau2.jpg',
+        'http://www.yanggreater.club/photo/hzau3.jpg',
+        'http://www.yanggreater.club/photo/mianhua.jpg',
+        'http://www.yanggreater.club/photo/xiaomai.jpg',
+        
       ]
     }
     
@@ -65,6 +69,9 @@ export default {
   height: 250px;
   width: 100%;
   /* background-image: url('./assets/time.jpg'); */
+}
+.header .el-carousel .el-carousel__container img{
+  height: 100%;
 }
 /* .el-carousel__item:nth-child(2n) {
      background-color: #99a9bf;

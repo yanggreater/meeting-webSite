@@ -24,13 +24,13 @@ export default {
                 {name:'David Jackson',introduce:'Cold Spring Harbor Laboratory'},
             ],
             messages2:[
-                {name:"郭亮",introduce:'Huazhong Agricultural University'},
-                {name:'刘建晓',introduce:'Huazhong Agricultural University'},
-                {name:"谢卡斌",introduce:'Huazhong Agricultural University'},
-                {name:"李林",introduce:'Huazhong Agricultural University'},
-                {name:"陈伟",introduce:'Huazhong Agricultural University'},
-                {name:"金双侠",introduce:'Huazhong Agricultural University'},
-                {name:'谢为博',introduce:'Huazhong Agricultural University'}
+                {name:"Liang Guo",introduce:'Huazhong Agricultural University'},
+                {name:"Kabin Xie",introduce:'Huazhong Agricultural University'},
+                {name:"Lin Li",introduce:'Huazhong Agricultural University'},
+                {name:"Wei Chen",introduce:'Huazhong Agricultural University'},
+                {name:"Shuangxia Jin",introduce:'Huazhong Agricultural University'},
+                {name:'Weibo Xie',introduce:'Huazhong Agricultural University'},
+                {name:'Jianxiao Liu',introduce:'Huazhong Agricultural University'}
             ]
         }
     }
